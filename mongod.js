@@ -1,7 +1,7 @@
 const MongoClient = require("mongodb").MongoClient
 const assert = require("assert") //用于调试信息
 const dbName = "softExam"
-const url = "mongodb://localhost:27017" //连接地址，斜杠"/myproject"表示数据库，若不存在则自动创建
+const url = "mongodb://localhost:31460" //连接地址，斜杠"/myproject"表示数据库，若不存在则自动创建
 module.exports = {
   handleMongo: (coll, fun, query, res,next) => {
     MongoClient.connect(url, { useUnifiedTopology: true }, function (
